@@ -9,7 +9,7 @@
 .settings
 .springBeans
 .sts4-cache
-
+.mvn
 ### IntelliJ IDEA ###
 .idea
 *.iws
@@ -23,3 +23,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+####maven######
+mvnw
+mvnw.cmd
