@@ -1,5 +1,6 @@
 package com.example.sbo.controller;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ public class HomeController {
 		return "Home Page.";
 	}
 	
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@GetMapping("/secure")
 	public String secure() {
 		return "Secure Page.";

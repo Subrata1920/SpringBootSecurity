@@ -21,8 +21,8 @@ public class UserAuthenticationProvider extends AbstractUserDetailsAuthenticatio
 
 		if (authentication.getCredentials() == null) {
 			logger.debug("Authentication failed: no credentials provided");
-
-			throw new BadCredentialsException(messages.getMessage("AbstractUserDetailsAuthenticationProvider.badCredentials", "Bad credentials"));
+			System.out.println("test");
+			throw new BadCredentialsException(messages.getMessage("AbstractUserDetailsAuthenticationProvider.badCredentials", "Bad credentials."));
 		}
 	}
 
